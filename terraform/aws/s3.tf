@@ -75,6 +75,7 @@ resource "aws_s3_bucket" "operations" {
   }
   force_destroy = true
   tags = {
+    
     Name                 = "${local.resource_prefix.value}-operations"
     Environment          = local.resource_prefix.value
     git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
